@@ -21,11 +21,11 @@ $(function () {
                 $("#vincitore").text("Il vincitore \u00E8 il giocatore 2");
             }
             var risultato1 = 0;
-            risultato1 = player1 - random;
-            Math.abs(risultato1);
+            risultato1 = Math.abs(player1 - random);
+            //Math.abs(risultato1); //Non va metodo abs
             var risultato2 = 0;
-            risultato2 = player2 - random;
-            Math.abs(risultato2);
+            risultato2 = Math.abs(player2 - random);
+            //Math.abs(risultato2); //Non va metodo abs
             if (risultato1 > risultato2) {
                 $("#vincitore").text("Nonostante non abbia indovinato il numero giocatore 2 \u00E8 andato pi\u00F9 vicino");
             }

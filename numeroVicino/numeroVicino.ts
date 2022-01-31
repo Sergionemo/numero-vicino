@@ -23,11 +23,11 @@ $(() => {
                 $("#vincitore").text(`Il vincitore è il giocatore 2`)
             }
             let risultato1: number = 0;
-            risultato1 = player1 - random;
-            Math.abs(risultato1); //Non va metodo abs
+            risultato1 = Math.abs(player1 - random);
+            //Math.abs(risultato1); //Non va metodo abs
             let risultato2: number = 0;
-            risultato2 = player2 - random;
-            Math.abs(risultato2); //Non va metodo abs
+            risultato2 = Math.abs(player2 - random);
+            //Math.abs(risultato2); //Non va metodo abs
             if (risultato1 > risultato2) {
                 $("#vincitore").text(`Nonostante non abbia indovinato il numero giocatore 2 è andato più vicino`)
             } else {
